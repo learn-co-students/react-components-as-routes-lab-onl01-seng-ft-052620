@@ -2,9 +2,12 @@ import React from 'react';
 import { directors } from '../data';
 
 const Directors = () => {
+
+  const directorsArray = directors.map(director => <div className="director"> {director.name} {director.movies.map(movie => movie)} </div>)
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Directors Page</h1>
+        {directorsArray}
     </div>
   );
 }
