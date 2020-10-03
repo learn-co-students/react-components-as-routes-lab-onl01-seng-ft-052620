@@ -8,7 +8,7 @@ const Directors = () => {
       {directors.map(d => 
         <div>{d.name}
         <ul>
-      {d.movies.map(m => <li>{m}</li>)}
+          {d.movies.map(m => <li>{m}</li>)}
         </ul>
         </div>
         )}
